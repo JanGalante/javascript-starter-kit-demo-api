@@ -1,8 +1,8 @@
-var express =  require('express');
+var express =  require('express'); // we don't transform via babel so vi have to use require for now
 var cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors()); // ensure the api can be reach from other domain (Surge)
 
 app.set('port', (process.env.PORT || 5000));
 
