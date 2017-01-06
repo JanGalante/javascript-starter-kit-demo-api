@@ -5,16 +5,39 @@ API for JS Dev Env Demo in Pluralsight course
 Procfile - Declare the command that Heroku should run
 app.json -  Cconfigure the app for Heroku
 
-To deploy to Heroku write in the cmd: 
-heroku login (in the root of the project) - Log you in to heroku
-heroku create  - Prepare heroku to recieve the app. Generates an url for the app. Its possible to specify your own name
-heroku git:remote -a nameless-shelf-77449 - Create a git remote to point to the application. The name/subdomain is the one you got in "heroku create"
-git push heroku master - publish the app. In the end of the console output you find the url to the app
+## To deploy to Heroku for first time: 
+Log you in to heroku (in the root of the project)
+```
+heroku login 
+```
+Prepare heroku to recieve the app. Generates an url for the app. Its possible to specify your own name
+```
+heroku create
+```
 
-When all the above is done once you just have to...
-git push heroku master - To push the master branch from git and publishn
+Create a git remote to point to the application. The name/subdomain is the one you got in "heroku create"
+```
+heroku git:remote -a nameless-shelf-77449
+```
+
+publish the app. In the end of the console output you find the url to the app
+```
+git push heroku master
+```
 
 
-Other
-heroku domains - View existing domains
-heroku domains:add www.example.com - Add a custom domain with a subdomain
+## Once the first setup is done you just have to...
+To push the master branch from git and publish
+```
+git push heroku master
+```
+
+## Other
+View existing domains
+```
+heroku domains
+```
+Add a custom domain with a subdomain
+```
+heroku domains:add www.example.com
+```
