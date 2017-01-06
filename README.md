@@ -12,4 +12,9 @@ heroku git:remote -a nameless-shelf-77449 - Create a git remote to point to the 
 git push heroku master - publish the app. In the end of the console output you find the url to the app
 
 When all the above is done once you just have to...
-git push heroku master - To push the master branch from git and publish
+git push heroku master - To push the master branch from git and publishn
+
+
+Other
+heroku domains - View existing domains
+heroku domains:add www.example.com - Add a custom domain with a subdomain
