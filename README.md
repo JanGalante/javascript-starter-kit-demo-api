@@ -7,9 +7,10 @@ app.json -  Cconfigure the app for Heroku
 
 ## To deploy to Heroku for first time: 
 Log you in to heroku (in the root of the project)
-```
+```shell
 heroku login 
 ```
+
 Prepare heroku to recieve the app. Generates an url for the app. Its possible to specify your own name
 ```
 heroku create
@@ -21,7 +22,7 @@ heroku git:remote -a nameless-shelf-77449
 ```
 
 publish the app. In the end of the console output you find the url to the app
-```
+```git
 git push heroku master
 ```
 
